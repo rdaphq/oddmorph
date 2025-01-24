@@ -1,6 +1,5 @@
 <div style="width: 100%; display: flex; flex-direction: column; justify-content: center;  align-items: center; padding: 50px 0;">
-  <img style="width: 200px padding" src="">
-  <a href="https://qcss.rdaphq.com">Website</a>
+  <img style="width: 300px;" padding" src="assets/oddmorph_png_white.png">
 </div>
 
 # OddMorph
