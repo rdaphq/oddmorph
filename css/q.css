@@ -1,0 +1,299 @@
+.qcss-margin_t-1q {
+    margin-top: 1px;
+  }
+  
+  .qcss-margin_t-2q {
+    margin-top: 20px;
+  }
+  
+  .qcss-margin_t-3q {
+    margin-top: 30px;
+  }
+  
+  .qcss-margin_t-4q {
+    margin-top: 40px;
+  }
+  
+  .qcss-margin_t-5q {
+    margin-top: 50px;
+  }
+  
+  .qcss-margin_t-6q {
+    margin-top: 60px;
+  }
+  
+  .qcss-margin_t-7q {
+    margin-top: 70px;
+  }
+  
+  .qcss-margin_t-8q {
+    margin-top: 80px;
+  }
+  
+  .qcss-margin_t-9q {
+    margin-top: 90px;
+  }
+  
+  .qcss-margin_t-10q {
+    margin-top: 100px;
+  }
+  
+  .autoBlur {
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+    animation-range: 20% cover;
+  }
+  
+  @keyframes autoBlurAnimation {
+    0% {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    50% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+    85% {
+      opacity: 1;
+      filter: blur(0px);
+    }
+    100% {
+      opacity: 0;
+      filter: blur(20px);
+    }
+  }
+  .autoAppear {
+    animation: autoAppear linear both;
+    animation-timeline: view();
+    animation-range: 0% cover;
+  }
+  
+  @keyframes autoAppear {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    30% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    70% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100px);
+    }
+  }
+  .smoothSlide {
+    animation: smoothSlide linear both;
+  }
+  
+  .smoothSlideLeft {
+    animation: smoothSlideLeft linear both;
+  }
+  
+  .smoothSlide, .smoothSlideLeft {
+    animation-timeline: view();
+    animation-range: 20% cover;
+  }
+  
+  @keyframes smoothSlide {
+    0% {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+    20% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+  }
+  @keyframes smoothSlideLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-300px);
+    }
+    20% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(300px);
+    }
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .qcss-fixed {
+    position: fixed;
+    z-index: 2;
+  }
+  
+  .qcss-nb_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 24px 0;
+    z-index: 20;
+    background-color: rgba(255, 255, 255, 0.062745098);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3764705882);
+    transition: all 0.4s ease;
+  }
+  .qcss-nb_1:hover {
+    backdrop-filter: blur(16px);
+  }
+  .qcss-nb_1 .qcss-nb_1-logo {
+    margin: 0 40px;
+  }
+  .qcss-nb_1 .qcss-nb_1-logo img {
+    width: 100px;
+    transition: all 0.2s ease;
+  }
+  .qcss-nb_1 .qcss-nb_1-logo img:hover {
+    transform: scale(1.05);
+  }
+  .qcss-nb_1 .qcss-nb_1-items {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .qcss-nb_1 .qcss-nb_1-items a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+    color: #ffffff;
+    font-size: 0.8rem;
+  }
+  .qcss-nb_1 .qcss-nb_1-items a:hover {
+    color: #999;
+  }
+  
+  .qcss-hr_1 {
+    width: 100%;
+    height: fit-content;
+    min-height: 100dvh;
+    padding: 70px 0;
+    background-color: #000000;
+  }
+  .qcss-hr_1 .qcss-hr_1-textbox {
+    text-align: left;
+    margin: 40px;
+    color: #fff;
+  }
+  .qcss-hr_1 .qcss-hr_1-textbox h1 {
+    font-size: 100px;
+    line-height: 1.1;
+  }
+  .qcss-hr_1 .qcss-hr_1-textbox div {
+    margin-top: 16px;
+  }
+  .qcss-hr_1 .qcss-hr_1-textbox div a {
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #c9c9c9;
+  }
+  .qcss-hr_1 .qcss-hr_1-textbox div a:hover {
+    color: #616161;
+  }
+  
+  .qcss-box_s {
+    padding-block: 60px;
+    height: fit-content;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #111;
+  }
+  .qcss-box_s h2 {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(59deg, rgb(255, 255, 255) 0%, rgb(220, 220, 220) 65%, rgb(125, 125, 125) 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+  }
+  
+  .qcss-sc_1 {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .qcss-sc_1 .qcss-sc_item {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    backdrop-filter: blur(10px);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(124deg, rgba(0, 0, 0, 0) 30%, rgba(69, 0, 88, 0.1208858543) 80%, rgba(239, 201, 255, 0.17) 100%);
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.3764705882);
+    border: 2px solid rgba(0, 0, 0, 0.3764705882);
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+  }
+  .qcss-sc_1 .qcss-sc_item .qcss-sc_item_uibox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    gap: 2rem;
+  }
+  .qcss-sc_1 .qcss-sc_item .qcss-sc_item_uibox .item_data {
+    text-align: left;
+  }
+  .qcss-sc_1 .qcss-sc_item .qcss-sc_item_uibox .item_data h3 {
+    font-size: 3rem;
+    line-height: 1.3;
+    color: #fff;
+  }
+  .qcss-sc_1 .qcss-sc_item .qcss-sc_item_uibox .item_data p {
+    color: #666;
+    font-size: 12px;
+  }
+  .qcss-sc_1 .qcss-sc_item .qcss-sc_item_uibox a {
+    text-decoration: none;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 2rem;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.2s ease;
+    font-size: 14px;
+  }
+  .qcss-sc_1 .qcss-sc_item .qcss-sc_item_uibox a:hover {
+    border: 2px solid transparent;
+    background-color: #666;
+    color: #fff;
+  }
+  .qcss-sc_1 .qcss-sc_item img {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 1rem;
+  }
+  
+  /*# sourceMappingURL=q.css.map */
